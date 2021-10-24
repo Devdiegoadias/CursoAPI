@@ -27,14 +27,12 @@ namespace CursoAPI.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            _logger.LogInfo("Here is info message from our values controller.");
-            _logger.LogDebug("Here is debug message from our values controller.");
-            _logger.LogWarn("Here is warn message from our values controller.");
-            _logger.LogError("Here is an error message from our values controller.");
-            return new string[] { "value1", "value2" };
-        }
-
-       
+            _logger.LogInfo("Info message.");
+            _logger.LogDebug("Debug message.");
+            _logger.LogWarn("Warn message.");
+            _logger.LogError("Error message");
+            return new string[] { "aaaa", "bbbb" };
+        }      
 
     }
 }
