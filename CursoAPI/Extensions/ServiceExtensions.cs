@@ -9,7 +9,7 @@ namespace CursoAPI.Extensions
     {
         public static void ConfigureLoggerService(this IServiceCollection services) =>
                             services.AddScoped<ILoggerManager, LoggerManager>();
-                
+
         public static void ConfigureCors(this IServiceCollection services) =>
             services.AddCors(options =>
             {

@@ -1,10 +1,6 @@
 ﻿using Contracts;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace CursoAPI.Controllers
 {
@@ -32,7 +28,7 @@ namespace CursoAPI.Controllers
             _logger.LogWarn("Warn message.");
             _logger.LogError("Error message");
             return new string[] { "aaaa", "bbbb" };
-        }      
+        }
 
     }
 }
